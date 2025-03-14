@@ -25,6 +25,31 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/ `appdb` /*!40100 DEFAULT CHARACTER SET 
 USE `appdb`;
 
 --
+-- Table structure for table `emplo`
+--
+
+DROP TABLE IF EXISTS `emplo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `emplo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `designation` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `salary` double NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `emplo`
+--
+
+LOCK TABLES `emplo` WRITE;
+/*!40000 ALTER TABLE `emplo` DISABLE KEYS */;
+/*!40000 ALTER TABLE `emplo` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `employee`
 --
 
@@ -59,4 +84,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-03-14 17:12:44
+-- Dump completed on 2025-03-14 17:24:40
